@@ -28,11 +28,6 @@ export const show = ({ params }, res, next) =>
 export const resetDB = ({params}, res, next) =>
 {
   console.log(`resetDB`)
-/*  Product.findOneAndUpdate({_id: "5bd0ae2da9fbe5a84494f843"}, {$set: {"stock": 6}},{}) //red t-shirt
-    .then(res.status(200).send('OK'))
-    .catch(next)
-*/
-
 
   //Red T-shirt
   Product.findOneAndUpdate({_id: "5bd0ae2da9fbe5a84494f843"}, {$set: {"stock": 6}}) //red t-shirt
